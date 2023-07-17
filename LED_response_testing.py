@@ -145,51 +145,6 @@ ax1[0].legend(custom_lines,['285 nm','300 nm','340 nm','400 nm','532 nm','633 nm
 
 plt.tight_layout()
 plt.subplots_adjust(hspace=0.03)
+
+plt.savefig('QCM_LED_response.png',dpi=700)
 plt.show()
-
-
-
-
-
-
-# gs_kw = dict(width_ratios=[1],height_ratios=[1,2,1])
-
-# fig, ax = plt.subplots(3,1,gridspec_kw=gs_kw)
-
-
-# ax[1].plot(time_hours,frequency_1st_derivative)
-# ax[1].set_ylim(-7200,7200)
-
-
-# plt.show()
-
-# # Add shading for LED 
-# #ax1[0].axvspan(0.09, 0.175, color='y', alpha=0.5, lw=0) # 285 nm LED
-# ax1[1].axvspan(0.09, 0.175, color='#5928ed', alpha=0.2, lw=0) # Full power
-
-# #ax1[0].axvspan(0.26, 0.356, color='y', alpha=0.5, lw=0) # 285 nm LED
-# ax1[1].axvspan(0.26, 0.356, color='#5928ed', alpha=0.2, lw=0) # half power
-
-# #ax1[0].axvspan(0.522, 0.594, color='y', alpha=0.5, lw=0) # 300 nm LED
-# ax1[1].axvspan(0.522, 0.594, color='#2546f0', alpha=0.2, lw=0) # Full power
-
-# #ax1[0].axvspan(0.661, 0.736, color='y', alpha=0.5, lw=0) # 300 nm LED
-# ax1[1].axvspan(0.661, 0.736, color='#2546f0', alpha=0.2, lw=0) # half power
-
-# #ax1[0].axvspan(0.846, 0.982, color='y', alpha=0.5, lw=0) # 340 nm LED
-# ax1[1].axvspan(0.846, 0.982, color='#0073e6', alpha=0.2, lw=0) # Full power 
-
-# #ax1[0].axvspan(1.04, 1.138, color='y', alpha=0.5, lw=0) # 340 nm LED
-# ax1[1].axvspan(1.04, 1.138, color='#0073e6', alpha=0.2, lw=0) # half power 
-
-# ax1[0].axvspan(1.202, 1.28, color='#00b4c5', alpha=0.2, lw=0) # 405 nm LED
-# ax1[1].axvspan(1.202, 1.28, color='#00b4c5', alpha=0.2, lw=0) # Full power 
-
-# #ax1[0].axvspan(1.324, 1.393, color='y', alpha=0.5, l2=0) # 405 nm LED
-# ax1[1].axvspan(1.324, 1.393, color='#00b4c5', alpha=0.2, lw=0) # half power 
-
-# #ax1[0].axvspan(1.425, 1.45, color='y', alpha=0.5, lw=0) # 532 nm LP
-# ax1[1].axvspan(1.425, 1.45, color='#00bf7d', alpha=0.2, lw=0) # 
-
-# #ax1[0].axvspan(1.485, 1.5, color='y', alpha=0.5, lw=0) # HeNe
-# ax1[1].axvspan(1.485, 1.5, color='r', alpha=0.2, lw=0) # 
